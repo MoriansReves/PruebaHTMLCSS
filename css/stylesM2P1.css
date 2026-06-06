@@ -78,6 +78,23 @@ textarea {
     border: 1px solid #ccc;
 }
 
+.opcion-checkbox {
+    margin-bottom: 8px;
+    display: flex;       
+    align-items: center; 
+}
+
+input[type="checkbox"] {
+    width: auto;         
+    margin-right: 10px;  
+}
+
+.label-inline {
+    display: inline;     
+    font-weight: normal; 
+    font-size: 14px;
+}
+
 .btn-secundario:hover {
     background-color: #cbd5e0;
 }
