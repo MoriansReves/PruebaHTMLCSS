@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encuesta de Satisfacción Ciudadana</title>
+  <link rel="stylesheet" href="css/stylesM2P1.css">
+</head>
+<body>
+
+  <header>
+    <h1>Encuesta de Satisfacción Ciudadana</h1>
+    <p>Evaluación de la usabilidad y accesibilidad de los trámites digitales gubernamentales.</p>
+  </header>
+
+  <main>
+    <form id="encuestaForm" action="#" method="POST">
+
+      <fieldset>
+        <legend>1. Datos del Participante</legend>
+        
+        <div class="control-form">
+          <label for="nombre">Nombre completo (Requerido):</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Ej. Jack Sparrow" required>
+        </div>
+
+        <div class="control-form">
+          <label for="edad">Edad (Solo números válidos):</label>
+          <input type="number" id="edad" name="edad" min="15" max="100" placeholder="Ej. 25" required>
+        </div>
+
+        <div class="control-form">
+          <label for="entidad">Entidad Federativa:</label>
+          <input type="text" id="entidad" name="entidad" placeholder="Ej. CDMX">
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>2. Experiencia de Uso</legend>
+
+        <div class="control-form">
+          <label for="tramite">¿Qué trámite digital realizó recientemente?</label>
+          <input type="text" id="tramite" name="tramite" placeholder="Ej. Consulta de CURP, Pago de predial">
+        </div>
+
+        <div class="control-form">
+          <label for="satisfaccion">Nivel de satisfacción con la plataforma digital:</label>
+          <input type="text" id="satisfaccion" name="satisfaccion" placeholder="Ej. Excelente, Bueno, Regular, Malo" required>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>3. Propuestas de Mejora</legend>
+
+        <div class="control-form">
+          <label for="comentarios">¿Qué mejoras propondría en la interfaz para hacerla más intuitiva en dispositivos móviles?</label>
+          <textarea id="comentarios" name="comentarios" rows="4" placeholder="Escriba aquí sus comentarios sobre la accesibilidad móvil..." required></textarea>
+        </div>
+      </fieldset>
+
+      <div class="botones-contenedor">
+        <button type="button" class="btn btn-secundario">Limpiar</button>
+        <button type="submit" class="btn btn-primario">Enviar Encuesta</button>
+      </div>
+
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Bases Tecnológicas para el Servicio Público. Práctica 1 - HTML & CSS Puro.</p>
+  </footer>
+
+</body>
+</html>
