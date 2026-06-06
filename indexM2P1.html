@@ -20,8 +20,18 @@
         <legend>1. Datos del Participante</legend>
         
         <div class="control-form">
-          <label for="nombre">Nombre completo (Requerido):</label>
-          <input type="text" id="nombre" name="nombre" placeholder="Ej. Jack Sparrow" required>
+          <label for="nombre_pila">Nombre de pila (Requerido):</label>
+          <input type="text" id="nombre_pila" name="nombre_pila" placeholder="Ej. Jack" required>
+        </div>
+
+        <div class="control-form">
+          <label for="apellido_paterno">Apellido Paterno (Requerido):</label>
+          <input type="text" id="apellido_paterno" name="apellido_paterno" placeholder="Ej. Sparrow" required>
+        </div>
+
+        <div class="control-form">
+          <label for="apellido_materno">Apellido Materno:</label>
+          <input type="text" id="apellido_materno" name="apellido_materno" placeholder="Ej. Smith">
         </div>
 
         <div class="control-form">
@@ -30,8 +40,8 @@
         </div>
 
         <div class="control-form">
-          <label for="entidad">Entidad Federativa:</label>
-          <input type="text" id="entidad" name="entidad" placeholder="Ej. CDMX">
+          <label for="genero">Género:</label>
+          <input type="text" id="genero" name="genero" placeholder="Ej. Masculino, Femenino, otro">
         </div>
       </fieldset>
 
@@ -45,6 +55,30 @@
 
         <div class="control-form">
           <label for="satisfaccion">Nivel de satisfacción con la plataforma digital:</label>
+
+          <div class="opcion-checkbox">
+            <input type="checkbox" id="tramite_curp" name="tramites" value="curp">
+            <label for="tramite_curp" class="label-inline">Consulta de CURP</label>
+          </div>
+          
+          <div class="opcion-checkbox">
+            <input type="checkbox" id="tramite_acta" name="tramites" value="acta">
+            <label for="tramite_acta" class="label-inline">Copia certificada de Acta de Nacimiento</label>
+          </div>
+          
+          <div class="opcion-checkbox">
+            <input type="checkbox" id="tramite_sat" name="tramites" value="sat">
+            <label for="tramite_sat" class="label-inline">Constancia de Situación Fiscal (SAT)</label>
+          </div>
+          
+          <div class="opcion-checkbox">
+            <input type="checkbox" id="tramite_otro" name="tramites" value="otro">
+            <label for="tramite_otro" class="label-inline">Otros trámites / Servicios</label>
+          </div>
+        </div>
+     
+        <div class="control-form">
+          <label for="satisfaccion">Nivel de satisfacción general con la plataforma digital:</label>
           <input type="text" id="satisfaccion" name="satisfaccion" placeholder="Ej. Excelente, Bueno, Regular, Malo" required>
         </div>
       </fieldset>
